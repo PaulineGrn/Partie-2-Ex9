@@ -6,12 +6,18 @@
   <link href="assets/css/style.css" rel="stylesheet"/>
 </head>
 <body>
+  <!-- Balise pour créer un formulaire -->
   <form>
+    <!-- 1ère partie sur l'identité de la personne. Fielset pour les grands rectangles de couleurs -->
     <fieldset class="identityInfo">
+      <!-- Titre de la première partie -->
       <legend class="identityInfo">Votre identité</legend>
+      <!-- Balise OL et Ul leurs enfants sont toujours des LI -->
       <ol>
         <li>
+          <!-- Label pour le nom de la première ligne de la liste -->
           <label for="lastname">Nom :</label>
+          <!-- Balise Imput auto fermante, rectangle vierge pour écrire texte dedans, placeholder pour écrire dans le rectangle en grisé -->
           <input type="text" id="lastname" placeholder="Nom"/>
         </li>
         <li>
@@ -24,11 +30,13 @@
         </li>
       </ol>
     </fieldset>
+    <!-- 2ème prtie sur l'adresse de livraison de la personne -->
     <fieldset class="addressinfo">
       <legend class="addressinfo">Adresse de livraison</legend>
       <ol>
         <li>
           <label for="adress">Adresse :</label>
+          <!-- textarea pour un grand rectangle de remplissage avec sa taille -->
           <textarea name="le-message" rows="6" cols="20"></textarea>
         </li>
         <li>
@@ -41,12 +49,15 @@
         </li>
       </ol>
     </fieldset>
+    <!-- 3ème partie sur les informations de règlement -->
     <fieldset class="regulationinfo">
       <legend class="regulationinfo">Informations de règlement</legend>
       <ol>
         <li>Type de carte bancaire :</li>
+        <!-- UL liste désordonnée -->
         <ul>
           <li>
+            <!-- radio pour faire des boutons coche -->
             <input type="radio" name="coche" value="small"/>
             <label for="VISA">VISA</label>
           </li>
@@ -69,6 +80,7 @@
         </li>
       </ol>
     </fieldset>
+    <!--  Création bouton pour cliquer dessus -->
     <button type="button">J'achète"</button>
   </form>
 </body>

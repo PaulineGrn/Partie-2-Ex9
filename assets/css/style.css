@@ -9,5 +9,6 @@
 }
 ul
 {
+	/* enlever les petits points à côté des cohe cartes */
 	list-style: none;
 }
